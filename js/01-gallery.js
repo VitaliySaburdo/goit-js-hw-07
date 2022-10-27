@@ -2,7 +2,6 @@ import { galleryItems } from './gallery-items.js';
 
 // Change code below this line
 
-console.log(galleryItems)
 const galleryContainerEl = document.querySelector('.gallery')
 const markupGallery = createGallery(galleryItems);
 galleryContainerEl.insertAdjacentHTML('beforeend', markupGallery);
@@ -20,6 +19,7 @@ function createGallery(cards) {
         </div>`}).join("");
 }
 let instance;
+
 function onGalleryContainerClick(e) {
     e.preventDefault();
     if (e.target.nodeName !== "IMG") {
