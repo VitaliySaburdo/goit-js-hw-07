@@ -26,6 +26,7 @@ let instance;
 
 function onGalleryContainerClick(e) {
   e.preventDefault();
+  console.log(e.target.nodeName);
   if (e.target.nodeName !== "IMG") {
     return;
   }
